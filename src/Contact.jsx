@@ -7,13 +7,14 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch("https://formspree.io/f/xdkzvzrb", {
+      const response = await fetch("http://localhost:3001/api/contact", {
         method: "POST",
-        body: formData,
+        body: JSON.stringify(data),
         headers: {
-          Accept: "application/json",
+          "Content-Type": "application/json",
         },
       });
 
