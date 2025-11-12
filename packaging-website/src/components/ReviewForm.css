@@ -1,0 +1,59 @@
+.review-form-section {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.review-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.review-form button {
+  background-color: #004aad;
+  color: white;
+  padding: 0.7rem 1.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.review-form button:hover {
+  background-color: #003380;
+}
+
+/* Responsive Improvements */
+@media (max-width: 600px) {
+  .review-form-section {
+    padding: 1rem;
+  }
+
+  .review-form input,
+  .review-form textarea {
+    padding: 0.6rem;
+    font-size: 0.95rem;
+  }
+
+  .review-form button {
+    width: 100%;
+    padding: 0.7rem;
+  }
+}

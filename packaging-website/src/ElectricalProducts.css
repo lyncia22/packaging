@@ -1,0 +1,83 @@
+.electrical-products-page {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.electrical-products-page h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #004aad;
+}
+
+.products-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Easier spacing management */
+}
+
+.product-card-horizontal {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f4f7ff;
+  padding: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.product-card-horizontal:hover {
+  transform: scale(1.02);
+}
+
+.product-card-horizontal img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h4 {
+  color: #004aad;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.product-info p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive for tablets and phones */
+@media (max-width: 768px) {
+  .product-card-horizontal {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .product-card-horizontal img {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  .product-info h4 {
+    font-size: 1.1rem;
+  }
+
+  .product-info p {
+    font-size: 0.95rem;
+  }
+}
